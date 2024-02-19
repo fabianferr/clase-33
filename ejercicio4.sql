@@ -1,0 +1,10 @@
+CREATE TABLE agenda( apellido VARCHAR(30), nombre VARCHAR(20), domicilio VARCHAR(30), telefono VARCHAR(11) );
+INSERT INTO agenda (apellido, nombre, domicilio, telefono) VALUES ('Acosta', 'Ana', 'Colon 123', '4234567');
+INSERT INTO agenda (apellido, nombre, domicilio, telefono) VALUES ('Bustamante', 'Betina', 'Avellaneda 135', '4458787');
+INSERT INTO agenda (apellido, nombre, domicilio, telefono) VALUES ('Lopez', 'Hector', 'Salta 545', '4887788');
+INSERT INTO agenda (apellido, nombre, domicilio, telefono) VALUES ('Lopez', 'Luis', 'Urquiza 333', '4545454');
+INSERT INTO agenda (apellido, nombre, domicilio, telefono) VALUES ('Lopez', 'Marisa', 'Urquiza 333', '4545454');
+SELECT * FROM agenda;
+SELECT * FROM agenda WHERE nombre='Marisa';
+SELECT nombre,domicilio FROM agenda WHERE apellido='Lopez';
+SELECT nombre FROM agenda WHERE telefono='4545454';
